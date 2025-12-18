@@ -1,0 +1,11 @@
+.header{
+    &__top{
+        background-color: var(--brown); 
+    }
+    // исправить удалить заменить потом
+    &__a{
+        color: var(--white);
+        font-size: var(--font-ps);
+        text-transform: uppercase;
+    }
+}

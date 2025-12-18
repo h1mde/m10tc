@@ -1,0 +1,13 @@
+:root{
+    --brown:#391707;
+    --orange:#FF9705;
+    --yellow:#FECC00;
+    --gray:#999; 
+    --white:white;
+    --black:black;
+
+    --font-h1: clamp(24px, 24px + (32 - 24) * ((100vw - 375px) / (1920 - 375)), 32px);
+    --font-h2: clamp(20px, 20px + (24 - 20) * ((100vw - 375px) / (1920 - 375)), 24px);
+    --font-p: clamp(16px, 16px + (20 - 16) * ((100vw - 375px) / (1920 - 375)), 20px);
+    --font-ps: clamp(14px, 14px + (16 - 14) * ((100vw - 375px) / (1920 - 375)), 16px);
+}

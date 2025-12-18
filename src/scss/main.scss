@@ -1,3 +1,15 @@
-body{
-    color: red;
+@use 'base/variables';
+
+@use 'base/typography';
+
+@use 'components/header';
+
+@use 'components/card-company';
+
+//@use 'components/footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
