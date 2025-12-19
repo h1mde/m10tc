@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
     <div class="header__top">
         <a href="" class="header__logo-link">
             <img class="header__logo" src="assets/images/logo-m10.svg" alt="">
         </a>
         <nav class="header__nav">
             <a href="index.html" class="header__nav-link">Главная</a>
-            <a href="" class="header__nav-link">Магазины и услуги</a>
+            <a href="companies.html" class="header__nav-link">Магазины и услуги</a>
             <a href="" class="header__nav-link">Акции</a>
             <a href="" class="header__nav-link">Аренда</a>
             <a href="" class="header__nav-link">Контакты</a>
@@ -37,16 +37,15 @@
             <p class="hero__text">Это универсальный центр для комфортной жизни. «М10» поможет сделать ваш дом уютным и теплым, а жизнь комфортной!</p>
         </section>
 
-        <section class="companies">
-            <nav class="companies__nav">
-                <a href="" class="companies__nav-link">Мебель и ремонт</a>
-                <a href="" class="companies__nav-link">Элетро-товары и оборудование</a>
-                <a href="" class="companies__nav-link">Автомобили</a>
-                <a href="" class="companies__nav-link">Услуги</a>
-                <a href="" class="companies__nav-link">Прочее</a>
+        <section class="companies-min">
+            <nav class="companies-min__nav companies__nav-link">
+                <a href="" class="companies-min__nav-link companies__nav-link">Мебель и ремонт</a>
+                <a href="" class="companies-min__nav-link companies__nav-link">Элетро-товары и оборудование</a>
+                <a href="" class="companies-min__nav-link companies__nav-link">Автомобили</a>
+                <a href="" class="companies-min__nav-link companies__nav-link">Услуги</a>
             </nav>
-            <h1 class="companies__title">Все магазины и услуги</h1>
-            <div class="companies__companies-list">
+            <h1 class="companies-min__title">Все магазины и услуги</h1>
+            <div class="companies-min__companies-list">
                 <div class="card-company">
   <img src="assets/images/wildberries.webp" alt="WILDBERRIES" class="card-company__logo">
 </div>
@@ -128,17 +127,22 @@
 </div>
              
                 <div class="card-company">
-  <img src="assets/images/daisy-print.webp" alt="DAISY PRINT" class="card-company__logo">
+  <img src="assets/images/daisy-print.webp" alt="Дейзи Принт" class="card-company__logo">
 </div>     
             </div>
             <a href="" class="button">Посмотреть всё</a>
         </section>
     </main>
+
     <footer class="footer">
     <a href="" class="footer__logo-link">
         <img src="assets/images/logo-m10-simple.svg" alt="" class="footer__logo">
     </a>
     <p class="footer__text">© 2017-2025 Все права защищены.</p>
 </footer>
+
+    <a href="#header" class="scroll-up">
+    <img src="assets/images/arrow-up.svg" alt="" class="scroll-up__icon">
+</a>
 </body>
 </html>

@@ -17,16 +17,15 @@
             <p class="hero__text">Это универсальный центр для комфортной жизни. «М10» поможет сделать ваш дом уютным и теплым, а жизнь комфортной!</p>
         </section>
 
-        <section class="companies">
-            <nav class="companies__nav">
-                <a href="" class="companies__nav-link">Мебель и ремонт</a>
-                <a href="" class="companies__nav-link">Элетро-товары и оборудование</a>
-                <a href="" class="companies__nav-link">Автомобили</a>
-                <a href="" class="companies__nav-link">Услуги</a>
-                <a href="" class="companies__nav-link">Прочее</a>
+        <section class="companies-min">
+            <nav class="companies-min__nav companies__nav-link">
+                <a href="" class="companies-min__nav-link companies__nav-link">Мебель и ремонт</a>
+                <a href="" class="companies-min__nav-link companies__nav-link">Элетро-товары и оборудование</a>
+                <a href="" class="companies-min__nav-link companies__nav-link">Автомобили</a>
+                <a href="" class="companies-min__nav-link companies__nav-link">Услуги</a>
             </nav>
-            <h1 class="companies__title">Все магазины и услуги</h1>
-            <div class="companies__companies-list">
+            <h1 class="companies-min__title">Все магазины и услуги</h1>
+            <div class="companies-min__companies-list">
                 @@include('../components/_card-company.html', {'companyNameDisplay':'WILDBERRIES', 'companyNameSlug':'wildberries'})
 
                 @@include('../components/_card-company.html', {'companyNameDisplay':'Пятёрочка', 'companyNameSlug':'pyaterochka'})
@@ -67,11 +66,14 @@
              
                 @@include('../components/_card-company.html', {'companyNameDisplay':'Шатура', 'companyNameSlug':'shatura'})
              
-                @@include('../components/_card-company.html', {'companyNameDisplay':'DAISY PRINT', 'companyNameSlug':'daisy-print'})     
+                @@include('../components/_card-company.html', {'companyNameDisplay':'Дейзи Принт', 'companyNameSlug':'daisy-print'})     
             </div>
             @@include('../components/_button-link.html', {'text':'Посмотреть всё'})
         </section>
     </main>
+
     @@include('../components/_footer.html')
+
+    @@include('../components/_scroll-up.html')
 </body>
 </html>

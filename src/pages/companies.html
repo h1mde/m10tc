@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЦ M10 Магазины и Услуги</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    @@include('../components/_header.html')
+    
+    <main class="main">
+        
+        <section class="companies">
+
+            <nav class="companies__nav">
+                <a href="" class="companies__nav-link">Мебель и ремонт</a>
+                <a href="" class="companies__nav-link">Элетро-товары и оборудование</a>
+                <a href="" class="companies__nav-link">Автомобили</a>
+                <a href="" class="companies__nav-link">Услуги</a>
+            </nav>
+
+            <h1 class="companies__title">Магазины и Услуги</h1>
+
+            <div class="companies__categories">
+                <div class="companies__category">
+                    <h2 class="companies__category-name"></h2>
+                    <div class="companies-grid">
+                        @@include('../components/_companies-grid-title.html')
+
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'ШАТУРА',
+                            'companyNameSlug':'shatura',
+                            'companyCategories':'Магазин мебели, корпусная мебель',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Амати Мебель',
+                            'companyNameSlug':'amati-mebel',
+                            'companyCategories':'Мебель для кухни',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Torex',
+                            'companyNameSlug':'torex-dveri',
+                            'companyCategories':'Двери',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'На Диван',
+                            'companyNameSlug':'na-divan',
+                            'companyCategories':'Диваны',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        })
+                    </div>
+                </div>
+
+                <div class="companies__category">
+                    <h2 class="companies__category-name"></h2>
+                    <div class="companies-grid">
+                        @@include('../components/_companies-grid-title.html')
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Молния',
+                            'companyNameSlug':'molniya-elektromontazh',
+                            'companyCategories':'Электротехническое оборудование, электромонтаж',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'DNS',
+                            'companyNameSlug':'dns-tehnika',
+                            'companyCategories':'Магазин электроники',
+                            'companyMinInfo':'c 10:00 до 22:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Все инструменты',
+                            'companyNameSlug':'vse-instrumenty',
+                            'companyCategories':'Магазин электроники',
+                            'companyMinInfo':'c 10:00 до 22:00',
+                        })
+                    </div>
+                </div>
+
+                <div class="companies__category">
+                    <h2 class="companies__category-name"></h2>
+                    <div class="companies-grid">
+                        @@include('../components/_companies-grid-title.html')
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'БИ-БИ',
+                            'companyNameSlug':'bi-bi',
+                            'companyCategories':'Магазин автозапчастей',
+                            'companyMinInfo':'с 8:00 до 23:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'carprice',
+                            'companyNameSlug':'CarPrice',
+                            'companyCategories':'Автосалон, выкуп автомобилей',
+                            'companyMinInfo':'c 11:00 до 19:00 <br> вс - пн : Выходной',
+                        })
+                    </div>
+                </div>
+
+                <div class="companies__category">
+                    <h2 class="companies__category-name"></h2>
+                    <div class="companies-grid">
+                        @@include('../components/_companies-grid-title.html')
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Дейзи Принт',
+                            'companyNameSlug':'daisy-print',
+                            'companyCategories':'Копировальный центр, полиграфические услуги',
+                            'companyMinInfo':'c 9:00 до 19:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Стирка.com',
+                            'companyNameSlug':'stirka-com',
+                            'companyCategories':'Прачечная, химчистка',
+                            'companyMinInfo':'c 8:00 до 23:00',
+                        })
+                        @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Диана',
+                            'companyNameSlug':'himchistka-diana',
+                            'companyCategories':'Химчистка',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        })
+                        <!-- @@include('../components/_companies-grid-item.html', {
+                            'companyNameDisplay':'Диана'',
+                            'companyNameSlug':'himchistka-diana',
+                            'companyCategories':'Химчистка',
+                            'companyMinInfo':'c 10:00 до 20:00',
+                        }) -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    @@include('../components/_footer.html')
+</body>
+</html>
