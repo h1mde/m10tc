@@ -1,7 +1,10 @@
 .header{
     &__top{
-        background-color: var(--brown); 
-    }
+        background-color: var(--brown);
+        *{
+            color: white;
+        }
+    }   
     // исправить удалить заменить потом
     &__a{
         color: var(--white);
