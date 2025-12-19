@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЦ M10 Главная</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    @@include('../components/_header.html')
+    
+    <main class="main">
+        
+        <section class="contacts">
+            <h1 class="contacts__title">Контакты</h1>
+            
+            <div class="contacts-info">
+                <h2 class="contacts-info__subtitle">Хотите арендовать помещение в ТЦ М10?</h2>
+                <p class="contacts-info__text">Адрес: г. Солнечногорск, улица Красная, д. 154, 141505</p>
+                <p class="contacts-info__text">Время работы: с 10:00 до 20:00</p>
+                <p class="contacts-info__text">Телефон: <a href="tel:+79161003718" class="contacts-info__link">+7 (916) 100-37-18</a></p>
+                <p class="contacts-info__text">Почта: <a href="mailto:x1x1x@mail.ru" class="contacts-info__link">x1x1x@mail.ru</a></p>                
+            </div>
+
+            @@include('../components/_adress.html')
+        </section>
+        
+    </main>
+
+    @@include('../components/_footer.html')
+
+    @@include('../components/_scroll-up.html')
+</body>
+</html>
