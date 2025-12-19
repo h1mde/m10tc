@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +26,11 @@
             </nav>
             <h1 class="companies-min__title">Все магазины и услуги</h1>
             <div class="companies-min__companies-list">
+
+                <a class="card-company-link" href="shatura.html">
+                    @@include('../components/_card-company.html', {'companyNameDisplay':'Шатура', 'companyNameSlug':'shatura'})
+                </a>
+
                 @@include('../components/_card-company.html', {'companyNameDisplay':'WILDBERRIES', 'companyNameSlug':'wildberries'})
 
                 @@include('../components/_card-company.html', {'companyNameDisplay':'Пятёрочка', 'companyNameSlug':'pyaterochka'})
@@ -63,9 +68,7 @@
                 @@include('../components/_card-company.html', {'companyNameDisplay':'LAZURIT. Мебель', 'companyNameSlug':'lazurit-mebel'})
              
                 @@include('../components/_card-company.html', {'companyNameDisplay':'MIXX', 'companyNameSlug':'mixx'})
-             
-                @@include('../components/_card-company.html', {'companyNameDisplay':'Шатура', 'companyNameSlug':'shatura'})
-             
+                          
                 @@include('../components/_card-company.html', {'companyNameDisplay':'Дейзи Принт', 'companyNameSlug':'daisy-print'})     
             </div>
             @@include('../components/_button-link.html', {'text':'Посмотреть всё'})

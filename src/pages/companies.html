@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,17 +28,19 @@
                     <h2 class="companies__category-name"></h2>
                     <div class="companies-grid">
                         @@include('../components/_companies-grid-title.html')
-
-                        @@include('../components/_companies-grid-item.html', {
+                        <a class="companies-grid__row-link" href="shatura.html">
+                            @@include('../components/_companies-grid-item.html', {
                             'companyNameDisplay':'ШАТУРА',
                             'companyNameSlug':'shatura',
-                            'companyCategories':'Магазин мебели, корпусная мебель',
+                            'companyCategories':'Мебели, корпусная мебель',
                             'companyMinInfo':'c 10:00 до 20:00',
                         })
+                        </a>
+                        
                         @@include('../components/_companies-grid-item.html', {
                             'companyNameDisplay':'Амати Мебель',
                             'companyNameSlug':'amati-mebel',
-                            'companyCategories':'Мебель для кухни',
+                            'companyCategories':'Мебель, мебель под заказ',
                             'companyMinInfo':'c 10:00 до 20:00',
                         })
                         @@include('../components/_companies-grid-item.html', {
@@ -92,8 +94,8 @@
                             'companyMinInfo':'с 8:00 до 23:00',
                         })
                         @@include('../components/_companies-grid-item.html', {
-                            'companyNameDisplay':'carprice',
-                            'companyNameSlug':'CarPrice',
+                            'companyNameDisplay':'CarPrice',
+                            'companyNameSlug':'carprice',
                             'companyCategories':'Автосалон, выкуп автомобилей',
                             'companyMinInfo':'c 11:00 до 19:00 <br> вс - пн : Выходной',
                         })
@@ -122,11 +124,11 @@
                             'companyCategories':'Химчистка',
                             'companyMinInfo':'c 10:00 до 20:00',
                         })
-                        <!-- @@include('../components/_companies-grid-item.html', {
-                            'companyNameDisplay':'Диана'',
-                            'companyNameSlug':'himchistka-diana',
-                            'companyCategories':'Химчистка',
-                            'companyMinInfo':'c 10:00 до 20:00',
+                    <!-- @@include('../components/_companies-grid-item.html', {
+                        'companyNameDisplay':'Диана'',
+                        'companyNameSlug':'himchistka-diana',
+                        'companyCategories':'Химчистка',
+                        'companyMinInfo':'c 10:00 до 20:00',
                         }) -->
                     </div>
                 </div>
