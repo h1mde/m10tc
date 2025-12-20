@@ -13,14 +13,18 @@
     <main class="main">
         
         <section class="contacts">
-            <h1 class="contacts__title">Контакты</h1>
+            <h1 class="contacts__title title">Контакты</h1>
             
             <div class="contacts-info">
-                <h2 class="contacts-info__subtitle">Хотите арендовать помещение в ТЦ М10?</h2>
-                <p class="contacts-info__text">Адрес: г. Солнечногорск, улица Красная, д. 154, 141505</p>
-                <p class="contacts-info__text">Время работы: с 10:00 до 20:00</p>
-                <p class="contacts-info__text">Телефон: <a href="tel:+79161003718" class="contacts-info__link">+7 (916) 100-37-18</a></p>
-                <p class="contacts-info__text">Почта: <a href="mailto:x1x1x@mail.ru" class="contacts-info__link">x1x1x@mail.ru</a></p>                
+                <h2 class="contacts-info__subtitle subtitle">Хотите арендовать помещение в ТЦ М10?</h2>
+                <p class="contacts-info__contact text-muted">Адрес: 
+                    <span class="conatcs-info__value text-usual"> г. Солнечногорск, улица Красная, д. 154, 141505</span></p>
+                <p class="contacts-info__contact text-muted">График: 
+                    <span class="conatcs-info__value text-usual"> с 10:00 до 20:00</span></p>
+                <p class="contacts-info__contact text-muted">Телефон: 
+                    <a href="tel:+79161003718" class="contacts-info__value link-usual">+7 (916) 100-37-18</a></p>
+                <p class="contacts-info__contact text-muted">Почта: 
+                    <a href="mailto:x1x1x@mail.ru" class="contacts-info__value link-usual">x1x1x@mail.ru</a></p>                
             </div>
 
             @@include('../components/_adress.html')

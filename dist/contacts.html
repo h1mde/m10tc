@@ -10,22 +10,22 @@
 <body>
     <header class="header" id="header">
     <div class="header__top">
-        <a href="" class="header__logo-link">
+        <a href="index.html" class="header__logo-link">
             <img class="header__logo" src="assets/images/logo-m10.svg" alt="">
         </a>
         <nav class="header__nav">
-            <a href="index.html" class="header__nav-link">Главная</a>
-            <a href="companies.html" class="header__nav-link">Магазины и услуги</a>
-            <a href="news.html" class="header__nav-link">Акции</a>
-            <a href="rent.html" class="header__nav-link">Аренда</a>
-            <a href="contacts.html" class="header__nav-link">Контакты</a>
+            <a href="index.html" class="header__nav-link link-nav">Главная</a>
+            <a href="companies.html" class="header__nav-link link-nav">Магазины и услуги</a>
+            <a href="news.html" class="header__nav-link link-nav">Акции</a>
+            <a href="rent.html" class="header__nav-link link-nav">Аренда</a>
+            <a href="contacts.html" class="header__nav-link link-nav">Контакты</a>
         </nav>
     </div>
     <div class="header__bottom">
-        <p class="header__descriptor">ТЦ M10 Мебель & Декор</p>
+        <a href="index.html" class="header__descriptor text-accent">ТЦ M10 Мебель & Декор</a>
         <div class="header__contacts">
-            <p class="header__contact">г. Солнечногорск, улица Красная, д. 154</p>
-            <a href="tel:+79161003718" class="header__contact">+7 (916) 100-37-18</a>
+            <p class="header__contact text-muted">г. Солнечногорск, улица Красная, д. 154</p>
+            <a href="tel:+79161003718" class="header__contact text-muted">+7 (916) 100-37-18</a>
         </div>
     </div>
 </header>
@@ -33,27 +33,29 @@
     <main class="main">
         
         <section class="contacts">
-            <h1 class="contacts__title">Контакты</h1>
+            <h1 class="contacts__title title">Контакты</h1>
             
             <div class="contacts-info">
-                <h2 class="contacts-info__subtitle">Хотите арендовать помещение в ТЦ М10?</h2>
-                <p class="contacts-info__text">Адрес: г. Солнечногорск, улица Красная, д. 154, 141505</p>
-                <p class="contacts-info__text">Время работы: с 10:00 до 20:00</p>
-                <p class="contacts-info__text">Телефон: <a href="tel:+79161003718" class="contacts-info__link">+7 (916) 100-37-18</a></p>
-                <p class="contacts-info__text">Почта: <a href="mailto:x1x1x@mail.ru" class="contacts-info__link">x1x1x@mail.ru</a></p>                
+                <h2 class="contacts-info__subtitle subtitle">Хотите арендовать помещение в ТЦ М10?</h2>
+                <p class="contacts-info__contact text-muted">Адрес: 
+                    <span class="conatcs-info__value text-usual"> г. Солнечногорск, улица Красная, д. 154, 141505</span></p>
+                <p class="contacts-info__contact text-muted">График: 
+                    <span class="conatcs-info__value text-usual"> с 10:00 до 20:00</span></p>
+                <p class="contacts-info__contact text-muted">Телефон: 
+                    <a href="tel:+79161003718" class="contacts-info__value link-usual">+7 (916) 100-37-18</a></p>
+                <p class="contacts-info__contact text-muted">Почта: 
+                    <a href="mailto:x1x1x@mail.ru" class="contacts-info__value link-usual">x1x1x@mail.ru</a></p>                
             </div>
 
             
 <section class="adress">
     <div class="adress__main">
-        <h2 class="adress__subtitle">Наш адресс</h2>
-        <p class="adress__text">г. Солнечногорск, улица Красная, д. 154, 141505</p>
+        <h2 class="adress__subtitle subtitle">Наш адресс</h2>
+        <p class="adress__text text-muted">г. Солнечногорск, улица Красная, д. 154, 141505</p>
     </div>
     <div class="adress__map" style="position:relative;overflow:hidden;">
-        <a href="https://yandex.ru/maps/org/m10_mebel_dekor/102950202669/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">М10 Мебель & Декор</a>
-        <a href="https://yandex.ru/maps/10755/solnechnogorsk/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Солнечногорске</a>
-        <iframe src="https://yandex.ru/map-widget/v1/org/m10_mebel_dekor/102950202669/?ll=36.968746%2C56.193908&z=17.14" frameborder="0" allowfullscreen="true" style="position:relative;">
-        </iframe>
+        <a href="https://yandex.ru/maps/org/m10_mebel_dekor/102950202669/?utm_medium=mapframe&utm_source=maps" style="position:absolute;top:0px;">М10 Мебель & Декор</a>
+        <iframe src="https://yandex.ru/map-widget/v1/org/m10_mebel_dekor/102950202669/?ll=36.968746%2C56.193908&z=17.14" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
     </div>
 </section>
 
@@ -62,10 +64,10 @@
     </main>
 
     <footer class="footer">
-    <a href="" class="footer__logo-link">
+    <a href="index.html" class="footer__logo-link">
         <img src="assets/images/logo-m10-simple.svg" alt="" class="footer__logo">
     </a>
-    <p class="footer__text">© 2017-2025 Все права защищены.</p>
+    <p class="footer__text text-muted">© 2017-2025 Все права защищены.</p>
 </footer>
 
     <a href="#header" class="scroll-up">

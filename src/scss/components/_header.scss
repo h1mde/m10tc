@@ -3,12 +3,7 @@
         background-color: var(--brown);
         *{
             color: white;
+            font-size: var(--font-ps);
         }
     }   
-    // исправить удалить заменить потом
-    &__a{
-        color: var(--white);
-        font-size: var(--font-ps);
-        text-transform: uppercase;
-    }
 }

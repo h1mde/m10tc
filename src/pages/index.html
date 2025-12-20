@@ -12,19 +12,20 @@
     
     <main class="main">
         <section class="hero">
-            <h1 class="hero__title">М10 — Здесь начинается комфорт</h1>
+            <h1 class="hero__title title">М10 — Здесь начинается комфорт</h1>
             <p class="hero__text">Приветствуем вас на сайте торгового центра «М10»!</p>
             <p class="hero__text">Это универсальный центр для комфортной жизни. «М10» поможет сделать ваш дом уютным и теплым, а жизнь комфортной!</p>
         </section>
 
         <section class="companies-min">
             <nav class="companies-min__nav companies__nav">
-                <a href="" class="companies-min__nav-link companies__nav-link">Мебель и ремонт</a>
-                <a href="" class="companies-min__nav-link companies__nav-link">Элетро-товары и оборудование</a>
-                <a href="" class="companies-min__nav-link companies__nav-link">Автомобили</a>
-                <a href="" class="companies-min__nav-link companies__nav-link">Услуги</a>
+                <a href="companies.html#furniture-and-repairs" class="companies-min__nav-link link-accent link-nav">Мебель и ремонт</a>
+                <a href="companies.html#electrical-supplies-and-equipment" class="companies-min__nav-link link-accent link-nav">Элетро-товары и оборудование</a>
+                <a href="companies.html#cars" class="companies-min__nav-link link-accent link-nav">Автомобили</a>
+                <a href="companies.html#services" class="companies-min__nav-link link-accent link-nav">Услуги</a>
             </nav>
-            <h1 class="companies-min__title">Все магазины и услуги</h1>
+
+            <h1 class="companies-min__title title">Все магазины и услуги</h1>
             <div class="companies-min__companies-list">
 
                 <a class="card-company-link" href="shatura.html">
@@ -71,7 +72,7 @@
                           
                 @@include('../components/_card-company.html', {'companyNameDisplay':'Дейзи Принт', 'companyNameSlug':'daisy-print'})     
             </div>
-            @@include('../components/_button-link.html', {'text':'Посмотреть всё'})
+            @@include('../components/_button-link.html', {'text':'Посмотреть всё', 'link':'companies.html'})
         </section>
     </main>
 

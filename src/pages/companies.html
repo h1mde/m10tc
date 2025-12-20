@@ -15,17 +15,17 @@
         <section class="companies">
 
             <nav class="companies__nav">
-                <a href="" class="companies__nav-link">Мебель и ремонт</a>
-                <a href="" class="companies__nav-link">Элетро-товары и оборудование</a>
-                <a href="" class="companies__nav-link">Автомобили</a>
-                <a href="" class="companies__nav-link">Услуги</a>
+                <a href="#furniture-and-repairs" class="companies__nav-link link-nav link-accent">Мебель и ремонт</a>
+                <a href="#electrical-supplies-and-equipment" class="companies__nav-link link-nav link-accent">Элетро-товары и оборудование</a>
+                <a href="#cars" class="companies__nav-link link-nav link-accent">Автомобили</a>
+                <a href="#services" class="companies__nav-link link-nav link-accent">Услуги</a>
             </nav>
 
-            <h1 class="companies__title">Магазины и Услуги</h1>
+            <h1 class="companies__title title">Магазины и Услуги</h1>
 
             <div class="companies__categories">
-                <div class="companies__category">
-                    <h2 class="companies__category-name"></h2>
+                <div id="furniture-and-repairs" class="companies__category">
+                    <h2 class="companies__category-name subtitle">Мебель и ремонт</h2>
                     <div class="companies-grid">
                         @@include('../components/_companies-grid-title.html')
                         <a class="companies-grid__row-link" href="shatura.html">
@@ -58,8 +58,8 @@
                     </div>
                 </div>
 
-                <div class="companies__category">
-                    <h2 class="companies__category-name"></h2>
+                <div id="electrical-supplies-and-equipment" class="companies__category">
+                    <h2 class="companies__category-name subtitle">Электротовары и оборудование</h2>
                     <div class="companies-grid">
                         @@include('../components/_companies-grid-title.html')
                         @@include('../components/_companies-grid-item.html', {
@@ -83,8 +83,8 @@
                     </div>
                 </div>
 
-                <div class="companies__category">
-                    <h2 class="companies__category-name"></h2>
+                <div id="cars" class="companies__category">
+                    <h2 class="companies__category-name subtitle">Автомобили</h2>
                     <div class="companies-grid">
                         @@include('../components/_companies-grid-title.html')
                         @@include('../components/_companies-grid-item.html', {
@@ -102,8 +102,8 @@
                     </div>
                 </div>
 
-                <div class="companies__category">
-                    <h2 class="companies__category-name"></h2>
+                <div id="services" class="companies__category">
+                    <h2 class="companies__category-name subtitle">Услуги</h2>
                     <div class="companies-grid">
                         @@include('../components/_companies-grid-title.html')
                         @@include('../components/_companies-grid-item.html', {
@@ -124,12 +124,6 @@
                             'companyCategories':'Химчистка',
                             'companyMinInfo':'c 10:00 до 20:00',
                         })
-                    <!-- @@include('../components/_companies-grid-item.html', {
-                        'companyNameDisplay':'Диана'',
-                        'companyNameSlug':'himchistka-diana',
-                        'companyCategories':'Химчистка',
-                        'companyMinInfo':'c 10:00 до 20:00',
-                        }) -->
                     </div>
                 </div>
             </div>
