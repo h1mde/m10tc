@@ -1,0 +1,28 @@
+.page-navigation{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.navigation{
+    flex-grow: 1;
+    padding: 12px var(--space-page);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

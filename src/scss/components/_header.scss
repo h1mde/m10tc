@@ -1,9 +1,58 @@
 .header{
+    & *{
+        font-size: var(--font-ps);
+    }
     &__top{
+        padding: 18px var(--space-page);
         background-color: var(--brown);
-        *{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & *{
             color: white;
-            font-size: var(--font-ps);
+            white-space: nowrap;
         }
-    }   
+    }
+    &__nav-close{
+        display: none;
+        align-items: center;
+    }
+
+    &__nav-menu{
+        display: none;
+    }
+    &__logo{
+        width: clamp(38px, calc(38px + (90 - 38) * ((100vw - 375px) / (1280 - 375))), 90px);
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 24px;
+    }
+
+    &__bottom{
+        padding: 12px var(--space-page);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:900px){
+            display: none;
+        }
+    }
+    &__contacts{
+        display: flex;
+        gap: 24px;        
+    }
+    @media (max-width:900px){
+        &__nav-link{
+            display: none;
+        }
+        &__nav-menu{
+            display: block;
+        }
+    }
+
+
 }
+

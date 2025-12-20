@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ТЦ M10 Навигация</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .header__nav-close{
+            display: block;
+        }
+        .header__nav-menu{
+            display: none;
+        }
+        .header__nav-link{
+            display: none;
+        }
+    </style>
+</head>
+<body class="page-navigation">
+    <header class="header" id="header">
+    <div class="header__top">
+        <a href="index.html" class="header__logo-link">
+            <img class="header__logo" src="assets/images/logo-m10.svg" alt="">
+        </a>
+        <nav class="header__nav">
+            <a class="header__nav-close" href="#" onclick="history.back(); return false;">
+                <img src="assets/images/close.svg" alt="НАЗАД">
+            </a>
+            <a class="header__nav-menu" href="navigation.html">
+                <img src="assets/images/menu.svg" alt="МЕНЮ">
+            </a>
+            <a href="index.html" class="header__nav-link link-nav">Главная</a>
+            <a href="companies.html" class="header__nav-link link-nav">Магазины и услуги</a>
+            <a href="news.html" class="header__nav-link link-nav">Акции</a>
+            <a href="rent.html" class="header__nav-link link-nav">Аренда</a>
+            <a href="contacts.html" class="header__nav-link link-nav">Контакты</a>
+        </nav>
+    </div>
+    <div class="header__bottom">
+        <a href="index.html" class="header__descriptor text-accent">ТЦ M10 Мебель & Декор</a>
+        <div class="header__contacts">
+            <p class="header__contact text-muted">г. Солнечногорск, улица Красная, д. 154</p>
+            <a href="tel:+79161003718" class="header__contact text-muted">+7 (916) 100-37-18</a>
+        </div>
+    </div>
+</header>
+    
+    <main class="main-navigation">
+        <section class="navigation">
+            <nav class="navigation__nav">
+                <a href="index.html" class="navigation__nav-link link-accent link-nav">Главная</a>
+                <a href="companies.html" class="navigation__nav-link link-accent link-nav">Магазины и услуги</a>
+                <a href="news.html" class="navigation__nav-link link-accent link-nav">Акции</a>
+                <a href="rent.html" class="navigation__nav-link link-accent link-nav">Аренда</a>
+                <a href="contacts.html" class="navigation__nav-link link-accent link-nav">Контакты</a>
+            </nav>
+
+            <div class="navigation__contacts">
+                <p class="navigation__contact text-muted">г. Солнечногорск, улица Красная, д. 154</p>
+                <a href="tel:+79161003718" class="navigation__contact text-muted">+7 (916) 100-37-18</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
