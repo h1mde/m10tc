@@ -1,0 +1,11 @@
+.button{
+    padding: 12px 48px;
+    border: solid 1px var(--orange);
+    transition: 100ms linear;
+    &:hover{
+        border: none;
+        color: var(--white);
+        background-color: var(--orange);
+        border: solid 1px var(--white);
+    }
+}

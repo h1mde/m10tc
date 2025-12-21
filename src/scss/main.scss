@@ -8,6 +8,20 @@
 
 @use 'components/navigation';
 
+@use 'components/index';
+
+@use 'components/card-company';
+
+@use 'components/button';
+
+@use 'components/companies';
+
+@use 'components/companies-grid';
+
+@use 'components/company';
+
+@use 'components/news';
+
 //@use 'components/footer';
 
 html {
@@ -15,16 +29,19 @@ html {
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
 
 .scroll-up{
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: var(--space-medium);
+    right: var(--space-medium);
     background-color: white;
     width: 48px;
     height: 48px;
@@ -32,4 +49,15 @@ html {
     align-items: center;
     justify-content: center;
     border: var(--orange) 1px solid;
+    box-shadow: var(--shadow-orange);
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-section);
+  padding: 0 0 var(--space-small);
+  @media(max-width: 900px){
+    padding: 12px 0;
+  }
 }

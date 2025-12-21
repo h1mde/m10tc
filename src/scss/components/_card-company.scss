@@ -1,0 +1,10 @@
+.card-company{
+    transition: 100ms linear;
+        &:hover{
+            box-shadow: var(--shadow-orange);
+            transform: scale(1.1);
+        }
+    &__logo{
+        width: clamp(160px, calc(160px + (280 - 160) * ((100vw - 375px) / (1280 - 375))), 280px );
+    }
+}

@@ -1,0 +1,44 @@
+.news{
+    padding: 0 var(--space-page);
+    display: flex;
+    flex-direction: column;
+    @media(max-width:900px){
+        gap: var(--space-small);
+    }
+}
+
+.company-news-card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__title{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: var(--space-small);
+    }
+    &__company-name{
+        text-align: end;
+    }
+    &__company-logo{
+        width: clamp(150px, calc(150px + (200px - 150px) * ((100vw - 375px) / (1280px - 375px))), 200px);
+    }
+
+    &__news-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        
+    }
+    &__news{
+        min-width: 250px;
+        flex: 1;
+    }
+    &__news-img{
+        width: 100%;
+    }
+
+    &__website{
+        text-align: center;
+    }
+}

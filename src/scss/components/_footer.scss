@@ -1,5 +1,15 @@
 .footer{
+    padding: 18px var(--space-page);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     *{
         font-size: var(--font-ps);
+    }
+    &__logo{
+        width: clamp(36px, calc(36px + (60 - 36) * ((100vw - 900px) / (1280 - 900))), 60px);
+    }
+    &__text{
+        text-align: end;
     }
 }
