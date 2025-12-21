@@ -60,3 +60,8 @@ img, iframe{
     padding: 12px 0;
   }
 }
+.page-main > main{
+  @media(max-width: 900px){
+    padding-top: 0;
+  }
+}
