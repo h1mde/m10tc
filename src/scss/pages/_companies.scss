@@ -3,18 +3,22 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-medium);
+
     @media (max-width:900px){
         padding: 0 var(--space-page);
     }
+
     &__categories{
         display: flex;
         flex-direction: column;
         gap: var(--space-medium);
     }
+
     &__category{
         display: flex;
         flex-direction: column;
         gap: var(--space-small);
+
         @media(max-width:900px){
             gap: 0px;
         }
@@ -27,11 +31,12 @@
         align-items: center;
         align-content: center;
         gap: var(--space-small);
+
         & *{
             font-size: var(--font-ps);
         }
-
     }
+
     &__nav-link{
         text-align: center;
     }

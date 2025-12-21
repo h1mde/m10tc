@@ -1,28 +1,26 @@
+// --base--
 @use 'base/variables';
-
 @use 'base/typography';
 
+// --components--
 @use 'components/header';
-
 @use 'components/footer';
-
-@use 'components/navigation';
-
-@use 'components/index';
-
 @use 'components/card-company';
-
 @use 'components/button';
-
-@use 'components/companies';
-
 @use 'components/companies-grid';
+@use 'components/adress';
 
-@use 'components/company';
 
-@use 'components/news';
+// --pages--
+@use 'pages/index';
+@use 'pages/navigation';
+@use 'pages/companies';
+@use 'pages/company';
+@use 'pages/news';
+@use 'pages/rent';
+@use 'pages/contacts';
 
-//@use 'components/footer';
+
 
 html {
   scroll-behavior: smooth;
@@ -34,22 +32,22 @@ html {
   box-sizing: border-box;
 }
 
-img {
+img, iframe{
   display: block;
 }
 
 .scroll-up{
-    position: fixed;
-    bottom: var(--space-medium);
-    right: var(--space-medium);
-    background-color: white;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: var(--orange) 1px solid;
-    box-shadow: var(--shadow-orange);
+  position: fixed;
+  bottom: var(--space-medium);
+  right: var(--space-medium);
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--orange) 1px solid;
+  box-shadow: var(--shadow-orange);
 }
 
 .main{
@@ -57,6 +55,7 @@ img {
   flex-direction: column;
   gap: var(--space-section);
   padding: 0 0 var(--space-small);
+  
   @media(max-width: 900px){
     padding: 12px 0;
   }

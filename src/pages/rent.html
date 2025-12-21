@@ -13,26 +13,28 @@
     <main class="main">
         
         <section class="rent">
-            <h1 class="rent__title title">Аренда</h1>
+            <h1 class="rent-title title">Аренда</h1>
 
-            <div class="rent-offer">
+            <div class="rent-offer rent-container">
                 <h2 class="rent-offer__subtitle subtitle">Хотите арендовать помещение в ТЦ М10?</h2>
                 <p class="rent-offer__text text-usual">Оставите заявку на подбор площади можно по телефону: </p>
                 <a href="tel:+79161003718" class="rent-offer__link link-usual">+7 (916) 100-37-18</a>
                 <p class="rent-offer__text text-usual">Присоединяйтесь к нам!</p>
             </div>
 
-            <div class="rent-advantages">
+            <div class="rent-advantages rent-container">
                 <h2 class="rent-advantages__subtitle subtitle">Ключевые особенности ТЦ М10</h2>
-                <o class="rent-advantages__list">
+                <ol class="rent-advantages__list">
                     <li class="rent-advantages__item text-usual">Один из крупнейших ТЦ города.</li>
                     <li class="rent-advantages__item text-usual">Расположен на Ленинградском шоссе.</li>
                     <li class="rent-advantages__item text-usual">Находится вблизи жилой застройки.</li>
                     <li class="rent-advantages__item text-usual">Имеет удобный въезд и выезд к зданию.</li>
                     <li class="rent-advantages__item text-usual">Оснащен вместительной парковкой.</li>
-                </o>
+                </ol>
             </div>
-            @@include('../components/_adress.html')
+            <div class="rent-adress">
+                @@include('../components/_adress.html')
+            </div>            
         </section>
     </main>
 

@@ -1,0 +1,51 @@
+.rent{
+    padding: var(--space-small) var(--space-page) 0;   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "title title"
+    "offer advantages"
+    "adress adress";
+    gap: 24px;
+
+    @media(max-width:900px){
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title"
+        "offer"
+        "advantages"
+        "adress";
+    }
+}
+
+.rent-container{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-left: var(--orange) solid 2px;
+    
+    @media(max-width:900px){
+        padding: 0 12px;
+    }
+}
+
+.rent-advantages{
+    grid-area: advantages;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        list-style-position: inside;
+    }
+    
+}
+.rent-offer{
+    grid-area:offer;
+}
+.rent-title{
+    grid-area:title;
+}
+.rent-adress{
+    grid-area:adress;
+}
