@@ -48,6 +48,19 @@ img, iframe{
   justify-content: center;
   border: var(--orange) 1px solid;
   box-shadow: var(--shadow-orange);
+  transition: 100ms linear;
+
+  &__icon{
+    stroke-width: 2;
+    stroke: var(--orange);
+  }
+  
+  &:hover{
+      background-color: var(--orange);
+      .scroll-up__icon{
+        stroke: var(--white);
+      }
+    }
 }
 
 .main{
